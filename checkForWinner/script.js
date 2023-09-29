@@ -5,24 +5,7 @@ let boardState = ['', '', '', '', '', '', '', '', ''];
 let gameOver = false;
 
 function checkForWinner() {
-	const possibleWinningPossibilities = [
-		[0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
-		[0, 3, 6], [1, 4, 7], [2, 5, 8], // columns
-		[0, 4, 8], [2, 4, 6] // diagonals
-	];
-
-	for (const combo of possibleWinningPossibilities) {
-		const [a, b, c] = combo;
-		if (boardState[a] && boardState[a] === boardState[b] && boardState[a] === boardState[c]) {
-			return boardState[a];
-		}
-	}
-
-	if (!boardState.includes('')) {
-		return 'Draw';
-	}
-
-	return null;
+	// TODO was muss hier gemacht werden, damit wir einen Gewinner feststellen können?
 }
 
 function handleCellClick(index) {
