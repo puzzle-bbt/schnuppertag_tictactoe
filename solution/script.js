@@ -11,8 +11,10 @@ function checkForWinner() {
 		[0, 4, 8], [2, 4, 6] // diagonals
 	];
 
-	for (const combo of possibleWinningPossibilities) {
-		const [a, b, c] = combo;
+	for (const possibility of possibleWinningPossibilities) {
+		const a = possibility[0];
+		const b = possibility[1];
+		const c = possibility[2];
 
 		if (boardState[a] !== null) {
 			if (boardState[a] === boardState[b]) {
@@ -31,14 +33,14 @@ function checkForWinner() {
 }
 
 function handleCellClick(index) {
-	if (gameOver || boardState[index]) {
+	if (gameOver == true || boardState[index].length != 0) {
 		return;
 	}
 
 	boardState[index] = currentPlayer;
 	render();
 	const winner = checkForWinner();
-	if (winner) {
+	if (winner != null && winner.length != 0) {
 		if (winner === 'Draw') {
 			message.textContent = "Es ist unentschieden!";
 		} else {
