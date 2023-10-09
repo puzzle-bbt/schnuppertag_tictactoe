@@ -18,14 +18,14 @@ function handleCellClick(index) {
 	const winner = checkForWinner();
 	if (winner) {
 		if (winner === 'Draw') {
-			message.textContent = "It's a Draw!";
+			message.textContent = "Es ist unentschieden!";
 		} else {
-			message.textContent = `${winner} wins!`;
+			message.textContent = `${winner} hat gewonnen!`;
 		}
 		gameOver = true;
 	} else {
 		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-		message.textContent = `Player ${currentPlayer}'s turn`;
+		message.textContent = `Spieler ${currentPlayer} ist an der Reihe`;
 	}
 }
 
