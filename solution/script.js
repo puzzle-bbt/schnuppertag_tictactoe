@@ -13,8 +13,13 @@ function checkForWinner() {
 
 	for (const combo of possibleWinningPossibilities) {
 		const [a, b, c] = combo;
-		if (boardState[a] && boardState[a] === boardState[b] && boardState[a] === boardState[c]) {
-			return boardState[a];
+
+		if (boardState[a] !== null) {
+			if (boardState[a] === boardState[b]) {
+				if (boardState[a] === boardState[c]) {
+					return boardState[a];
+				}
+			}
 		}
 	}
 
@@ -26,7 +31,9 @@ function checkForWinner() {
 }
 
 function handleCellClick(index) {
-	if (gameOver || boardState[index]) return;
+	if (gameOver || boardState[index]) {
+		return;
+	}
 
 	boardState[index] = currentPlayer;
 	render();

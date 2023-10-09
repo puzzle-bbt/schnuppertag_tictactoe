@@ -9,7 +9,9 @@ function checkForWinner() {
 }
 
 function handleCellClick(index) {
-	if (gameOver || boardState[index]) return;
+	if (gameOver || boardState[index]) {
+		return;
+	}
 
 	boardState[index] = currentPlayer;
 	render();
