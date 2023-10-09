@@ -9,23 +9,23 @@ function checkForWinner() {
 }
 
 function handleCellClick(index) {
-	if (gameOver || boardState[index]) {
+	if (gameOver == true || boardState[index].length != 0) {
 		return;
 	}
 
 	boardState[index] = currentPlayer;
 	render();
 	const winner = checkForWinner();
-	if (winner) {
+	if (winner != null && winner.length != 0) {
 		if (winner === 'Draw') {
-			message.textContent = "Es ist unentschieden!";
+			// TODO teile dem Benutzer mit, dass es unentschieden ist
 		} else {
-			message.textContent = `${winner} hat gewonnen!`;
+			// TODO teile dem Benutzer mit, wer gewonnen hat
 		}
 		gameOver = true;
 	} else {
 		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-		message.textContent = `Spieler ${currentPlayer} ist an der Reihe`;
+		// TODO teile dem Benutzer mit, welcher Spieler an der Reihe ist
 	}
 }
 
