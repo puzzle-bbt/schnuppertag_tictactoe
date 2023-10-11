@@ -10,14 +10,12 @@ function checkForWinner() {
 	const possibleWinningPossibilities = [];
 
 	for (const possibility of possibleWinningPossibilities) {
-			if (boardState[possibility[0]] === boardState[possibility[1]]) {
-				if (boardState[possibility[0]] === boardState[possibility[2]]) {
+		if (boardState[possibility[0]] === boardState[possibility[1]]) {
+			if (boardState[possibility[0]] === boardState[possibility[2]]) {
 
-					return // Gib hier den Gewinner zurück;
-				}
+				return // Gib hier den Gewinner zurück;
 			}
-		
-		
+		}
 	}
 
 	if (!boardState.includes('')) {
