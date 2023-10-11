@@ -5,7 +5,26 @@ let boardState = ['', '', '', '', '', '', '', '', ''];
 let gameOver = false;
 
 function checkForWinner() {
-	// TODO was muss hier gemacht werden, damit wir einen Gewinner feststellen können?
+	console.log(boardState);
+	// TODO passe dieses Array an, damit die verschiedenen Möglichkeiten durchgelaufen werden können
+	const possibleWinningPossibilities = [];
+
+	for (const possibility of possibleWinningPossibilities) {
+			if (boardState[possibility[0]] === boardState[possibility[1]]) {
+				if (boardState[possibility[0]] === boardState[possibility[2]]) {
+
+					return // Gib hier den Gewinner zurück;
+				}
+			}
+		
+		
+	}
+
+	if (!boardState.includes('')) {
+		return 'Unentschieden';
+	}
+
+	return null;
 }
 
 function handleCellClick(index) {
@@ -17,15 +36,15 @@ function handleCellClick(index) {
 	render();
 	const winner = checkForWinner();
 	if (winner != null && winner.length != 0) {
-		if (winner === 'Draw') {
-			// TODO teile dem Benutzer mit, dass es unentschieden ist
+		if (winner === 'Unentschieden') {
+			message.textContent = "Es ist unentschieden!";
 		} else {
-			// TODO teile dem Benutzer mit, wer gewonnen hat
+			message.textContent = winner + ` hat gewonnen!`;
 		}
 		gameOver = true;
 	} else {
 		currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-		// TODO teile dem Benutzer mit, welcher Spieler an der Reihe ist
+		message.textContent = `Spieler ${currentPlayer} ist an der Reihe`;
 	}
 }
 
