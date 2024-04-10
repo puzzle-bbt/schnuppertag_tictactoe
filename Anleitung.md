@@ -43,7 +43,7 @@ Was müssen wir Programmieren?
   3. Das Setzen im Spielstand speichern.
   4. Das Spielfeld aktualisieren
   5. Überprüfen, ob das Spiel jetzt zu Ende ist
-    * → Den Spielstatus (gameState) setutem
+    * → Den Spielstatus (gameState) setzen
   6. Meldung aktualisieren
 
 ## Spielende feststellen
@@ -71,17 +71,4 @@ Was müssen wir Programmieren?
 * Falls nicht, hat es noch leere Felder?
   * Ja → weiterspielen
   * Nein → Unentschieden
-
----
-// Spielstand: gameState
-// Brettstatus: boardState
-// aktueller Spieler: currentPlayer
-// message.textContent = "Test zum Anzeigen"
-
-    // 1) Ist das Spiel zu Ende
-    // 2) Hat keine freien Zellen
-    if () {
-        return;
-    }
-    // 3) Das Setzen im Spielstand speichern.
 
