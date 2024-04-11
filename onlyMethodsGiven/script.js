@@ -30,12 +30,12 @@ function handleCellClick(index) {
 
     // 1) Ist das Spiel zu Ende
     // 2) Hat keine freien Zellen
-    if () {
+    if (true) {
         return;
     }
 
     // 3) Das Setzen des Spielers im Spielstand speichern.
-    boardState[...] = ...
+    // boardState[...] = ...
 
     // 4) Das Spielfeld aktualisieren
     //-->
@@ -43,14 +43,15 @@ function handleCellClick(index) {
     // 5) Überprüfen ob das Spiel jetzt zu Ende ist -> Den Spielstatus (gameState) setzen.
     //-->
 
+    // Zeigt der Status in der Browser-Console an.
     console.log('boardState:', boardState);
     console.log('gameState:', gameState);
 
     //Spielstand (gameState) überprüfen und jeweilige message setzen
     //draw ("Es ist unentschieden")
-    if () {
+    if (true) {
     //playing ("Spieler ... ist an der Reihe")
-    } else if () {
+    } else if (true) {
         //Wechselt Spieler
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     //Spieler hat gewonnen ("Spieler ... hat gewonnen")
@@ -62,12 +63,12 @@ function checkForWinner() {
     //Durch Gewinnmöglichkeiten loopen
     for (const possibility of possibleWinningPossibilities) {
         //Möglichkeiten auslesen
-        const symbol1 = ...
-        const symbol2 = ...
-        const symbol3 = ...
+        // const symbol1 = ...
+        // const symbol2 = ...
+        // const symbol3 = ...
 
         //Symbol ist nicht leer und alle Symbole sind gleich
-        if () {
+        if (true) {
             //Gewinner im Spielstatus setzen
             //-->
             return;
@@ -75,7 +76,7 @@ function checkForWinner() {
     }
 
     //Wenn der Brettstatus kein leeres Feld mehr beinhaltet, den Spielstatus auf untentschieden setzen
-    if () {
+    if (true) {
     }
 }
 
