@@ -7,19 +7,56 @@ Auf einem quadratischen, 3×3 Felder großen Spielfeld setzen die beiden Spieler
 # Planung
 
 ## Wie viele Spieler hat das Spiel?
-Zwei Spieler
+
+.
+
+.
+
+.
+
+**→ Zwei Spieler**
+
+.
 
 ## Welche Regeln hat das Spiel?
-* Die Spieler setzen abwechselnd ihr Zeichen auf ein freies Feld.
 
-## Welche Regeln beenden das Spiel?
-* Ein Spieler hat drei seiner Zeichen in eine Zeile, Spalte oder Diagonale gesetzen.
-* Es hat keine freien Felder.
+.
+
+.
+
+.
+
+**→ Die Spieler setzen abwechselnd ihr Zeichen auf ein freies Feld, bis jemand gewonnen hat.**  
+**→ Ein Spieler hat gewonnen, wenn er drei seiner Zeichen in eine Zeile, Spalte oder Diagonale gesetzt hat.**
+
+.
+
+## Welche Situationen beenden das Spiel?
+
+.
+
+.
+
+.
+
+**→ Ein Spieler hat gewonnen**  
+**→ Es hat keine freien Felder.**
+
+.
 
 ## Wie viele verschiedene Endzustände existieren?
-* Spieler X gewinnt
-* Spieler O gewinnt
-* Es ist unentschieden
+
+.
+
+.
+
+.
+
+**→ Spieler X gewinnt**  
+**→ Spieler O gewinnt**  
+**→ Es ist unentschieden**
+
+.
 
 ---
 
